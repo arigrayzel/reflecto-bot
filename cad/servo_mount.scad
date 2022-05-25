@@ -9,8 +9,8 @@ horn_length=32;
 
 bottom_plate = [horn_length+4,2*horn_length,3];
 bottom_width=bottom_plate[2];
-inner = [horn_length+2*fit_eps,flange_width+2*fit_eps,diam+bottom_width];
-outer = inner + [4,2,4];
+inner = [horn_length+2*fit_eps,flange_width+fit_eps,diam+bottom_width];
+outer = inner + [4-2*fit_eps,2,4];
 
 difference(){
 	translate([-outer[0]/2,-outer[1]/2,0]){cube(outer);}

@@ -1,10 +1,10 @@
 eps = 0.01;
 fit_eps = 1;
 
-attachment = [5,3,6] + [fit_eps/2, fit_eps/2, fit_eps/2]; //stepper attachment flange
-stepper_flange_block = [50,35,10];
+attachment = [5,3,10];// + [fit_eps/2, fit_eps/2, fit_eps/2]; //stepper attachment flange
+stepper_flange_block = [70,35,10];
 
-servo_lower = [22.6,12,18] + [fit_eps, fit_eps, fit_eps];
+servo_lower = [22.6,12,18];// + [fit_eps, fit_eps, fit_eps];
 
 
 difference(){
